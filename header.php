@@ -16,30 +16,41 @@
 
   <body <?php body_class(); ?>>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
-        </div>
+      <div class="contain-to-grid fixed">    
 
-        <div class="navbar-collapse collapse">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="<?php bloginfo('url'); ?>">prozess report</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
 
-          <?php 
-            $args = array(
-              'menu'        => 'header-menu',
-              'menu_class'  => 'nav navbar-nav',
-              'container'   => 'false'
-            );
-            wp_nav_menu( $args );
-          ?>
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
 
-        </div><!--/.navbar-collapse -->
+            <?php 
+                  $args = array(
+                    'menu'        => 'nav-top-bar',
+                    'menu_class'  => 'right',
+                    'container'   => 'false'
+                  );
+                  wp_nav_menu( $args );
+            ?>
 
-      </div>
-    </div>
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li>
+              <a href="#">Archiv</a>
+              <ul class="dropdown">
+                <li><a href="#">First link in dropdown</a></li>
+                <li class="active"><a href="#">Active link in dropdown</a></li>
+              </ul>
+            </li>  
+          </ul>
+
+        </section>
+      </nav>
+
+			</div>

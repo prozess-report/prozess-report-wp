@@ -1,7 +1,11 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <div class="row">
+
+        <p>Verein zur ...</p>
+
+        </div>
       </footer>
     </div> <!-- /container -->
 
