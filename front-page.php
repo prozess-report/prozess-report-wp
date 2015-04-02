@@ -15,28 +15,13 @@
 
     <div class="row">
    		<div class="large-12 columns panel prozess-slider">
-   			<div>
-   				<div class="large-6 columns">
-   					<h2>Yüksel Y. klagt ÖBB</h2>
-	   				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	   				<p><a href="" class="button">Weiterlesen</a></p>
-	   			</div>
-	   			<div class="large-6 columns">
-	   				<p>letzter Ticker-Post:</p>
-	   			</div>
-   			</div>
 
    			<div>
-	   			<h2>Yüksel Y. klagt ÖBB</h2>
-	   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	   			<p><a href="" class="button">Weiterlesen</a></p>
-   			</div>
-
-   			<div>
-	   			<h2>Yüksel Y. klagt ÖBB</h2>
-	   			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	   			<p><a href="" class="button">Weiterlesen</a></p>
-   			</div>
+   			<?php $myQuery = new WP_Query('showposts=5&cat=16');
+			while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; wp_reset_query(); ?>	
+			</div>
 
    		</div>
 
@@ -45,7 +30,6 @@
     <div class="row">
     	<div class="large-12 columns">
 			<h2>Aktuell</h2>
-
     	</div>
 
 
@@ -54,7 +38,6 @@
 		while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
 			<article class="large-4 columns">
 			    
-		    	<h3><?php the_title(); ?></h3>
 				<?php the_content(); ?>
 				<p><?php echo the_time('j. F Y'); ?></p>
 
