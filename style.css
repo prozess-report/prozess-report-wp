@@ -1,6 +1,6 @@
 /*
 Theme Name: prozess.report
-Theme URI: 
+Theme URI: http://prozess.report
 Author: Silvio Heinze
 Author URI: http://silvioheinze.eu
 Description: Theme for the lawsuit tracker prozess.report
@@ -14,7 +14,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-
+	padding-top: 50px;
 }
 
+.footer-top {
+	background: #eee;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+footer {
+	background: #333;
+}
+
+
+/* Schriften */
 

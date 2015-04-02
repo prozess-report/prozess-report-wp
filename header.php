@@ -39,17 +39,6 @@
                   wp_nav_menu( $args );
             ?>
 
-          <!-- Left Nav Section -->
-          <ul class="left">
-            <li>
-              <a href="#">Archiv</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-                <li class="active"><a href="#">Active link in dropdown</a></li>
-              </ul>
-            </li>  
-          </ul>
-
         </section>
       </nav>
 
