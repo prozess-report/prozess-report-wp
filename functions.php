@@ -40,6 +40,24 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+function add_menuclass($ulclass) {
+return preg_replace('/<a rel="buttonlink"/', '<a class="button"', $ulclass, 1);
+}
+add_filter('wp_nav_menu','add_menuclass');
+
+
+class My_Sub_Menu extends Walker_Nav_Menu {
+  function start_lvl(&$output, $depth) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "\n$indent<ul class=\"dropdown\">\n";
+  }
+  function end_lvl(&$output, $depth) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "$indent</ul>\n";
+  }
+}
+
+
 
 // Function for creating Widegets
 function create_widget($name, $id, $description) {
