@@ -17,8 +17,15 @@ body {
 	padding-top: 50px;
 }
 
-.footer-top {
+#newsletter {
 	background: #eee;
+	padding-top: 2em;
+	padding-bottom: 1em;
+
+}
+
+#footer-top {
+	background: rgba(0,0,0,0.6);
 	padding-top: 2em;
 	padding-bottom: 1em;
 }
