@@ -1,7 +1,7 @@
     <div id="newsletter">
 		<div class="row">
 			<div class="medium-6 columns">
-				<h4>Lass dich von uns auf dem Laufenden halten.</h4>
+				<h3>Lass dich von uns auf dem Laufenden halten.</h3>
 				<p>Abboniere unseren monatlichen Newsletter mit Zusammenfassungen über die aktuellen Prozesse.</p>
 			</div>
 			<div class="medium-6 columns">
@@ -22,12 +22,16 @@
 	<div id="footer-top">
 		<div class="row">
 			<div class="large-4 columns">
-				<h2>Kontakt</h2>
-				<p>Verein Prozess.Report<br>Lindengasse 56/18-19<br>c/o Impact HUB Vienna<br>AT-1070 Vienna</p>
+				<h3>Kontakt</h3>
+				<p>Verein prozess.report<br>Lindengasse 56/18-19<br>c/o Impact HUB Vienna<br>AT-1070 Vienna</p>
 				<p><a href="mailto:prozessreport@systemli.org">prozessreport@systemli.org</a><br><a href="http://www.prozess.report/wp-content/uploads/C0B64C14.asc">GPG key</a></p>
 			</div>
-
-			<div class="large-8 columns">
+			<div class="large-4 columns">
+				<h3>Anonymer Briefkasten</h3>
+				<p>Du kannst uns völlig anonym und verschlüsselt Informationen zukommen lassen, die hilfreich für die Berichterstattung von Prozessen sind. Weder wir noch andere können dich dabei zurückverfolgen.</p>
+			</div>
+			<div class="large-4 columns">
+				<h3>Spenden</h3>
 				<a href="" class="button">Spenden</a>
 			</div>
 		</div>
