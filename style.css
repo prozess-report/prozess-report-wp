@@ -17,6 +17,26 @@ body {
 	padding-top: 50px;
 }
 
+
+.slick-prev, .slick-next, .slick-prev::before, .slick-next::before {
+	color: #f2f2f2 !important;
+	font-size: 2em !important;
+	opacity: 1 !important;
+}
+
+.slick-prev, .slick-next {
+	width: 2em;
+	height: 2em;
+}
+
+.slick-prev {
+	left: -2em;
+}
+
+.slick-next {
+	right: -2em;
+}
+
 #newsletter {
 	background: #eee;
 	padding-top: 2em;
