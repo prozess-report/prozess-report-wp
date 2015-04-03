@@ -31,8 +31,7 @@
 				<p>Du kannst uns völlig anonym und verschlüsselt Informationen zukommen lassen, die hilfreich für die Berichterstattung von Prozessen sind. Weder wir noch andere können dich dabei zurückverfolgen.</p>
 			</div>
 			<div class="large-4 columns">
-				<h3>Spenden</h3>
-				<p>Du kannst uns völlig anonym und verschlüsselt Informationen zukommen lassen, die hilfreich für die Berichterstattung von Prozessen sind. Weder wir noch andere können dich dabei zurückverfolgen.</p>
+				<?php  dynamic_sidebar( 'footer-right' ); ?>
 			</div>
 		</div>
 		<div class="row">

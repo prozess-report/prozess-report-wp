@@ -19,7 +19,7 @@ function theme_js() {
     
     wp_deregister_script( 'jquery' );
     wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
- 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', true );
+ 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
     wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.js', array( 'jquery' ), '5.5.1', true );
     wp_register_script( 'slick_js', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.4.1', true );
 
@@ -53,7 +53,7 @@ add_action( 'init', 'register_theme_menus' );
 
 
 function add_menuclass($ulclass) {
-return preg_replace('/<a rel="buttonlink"/', '<a class="button"', $ulclass, 1);
+	return preg_replace('/<a rel="buttonlink"/', '<a class="button"', $ulclass, 1);
 }
 add_filter('wp_nav_menu','add_menuclass');
 
@@ -108,6 +108,7 @@ function create_widget($name, $id, $description) {
 // Create widgets 
 create_widget("Startseite Kurzbeschreibung", "front-description", "Wird auf der Startseite links unten angezeigt.");
 create_widget("Startseite Nächste Termine", "front-calendar", "Wird auf der Startseite rechts unten angezeigt.");
+create_widget("Footer Rechts", "footer-right", "Rechter Bereich im Footer");
 create_widget("Footer Logos", "footer-logos", "Logobereich im Footer");
 
 ?>
