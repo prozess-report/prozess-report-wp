@@ -71,6 +71,7 @@ ol.hfeed li p {
 	background: #eee;
 	padding-top: 2em;
 	padding-bottom: 1em;
+	margin-top: 1em;
 
 }
 
@@ -86,4 +87,20 @@ footer {
 
 
 /* Schriften */
+
+
+
+
+
+/* Plugin Livestream */
+
+.livestream_feed dt {
+	font-size: 0.9em;
+	font-weight: normal;
+
+}
+
+
+
+
 
