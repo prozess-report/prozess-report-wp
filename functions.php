@@ -107,8 +107,8 @@ function create_widget($name, $id, $description) {
 
 create_widget("Startseite Kurzbeschreibung", "front-description", "Wird auf der Startseite links unten angezeigt.");
 create_widget("Startseite Nächste Termine", "front-calendar", "Wird auf der Startseite rechts unten angezeigt.");
-create_widget("Footer Rechts", "footer-left", "Linker Bereich im Footer");
-create_widget("Footer Rechts", "footer-center", "Mittlerer Bereich im Footer");
+create_widget("Footer Links", "footer-left", "Linker Bereich im Footer");
+create_widget("Footer Mitte", "footer-center", "Mittlerer Bereich im Footer");
 create_widget("Footer Rechts", "footer-right", "Rechter Bereich im Footer");
 create_widget("Footer Logos", "footer-logos", "Logobereich im Footer");
 
