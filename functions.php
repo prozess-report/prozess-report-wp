@@ -20,8 +20,15 @@ function theme_js() {
 	wp_enqueue_script( 'slick_js', get_bloginfo( 'template_directory' ) . '/js/slick.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'main_js', get_bloginfo( 'template_directory' ) . '/js/main.js', array('jquery'), '', true );
 
+	if( !is_admin()){
+	wp_deregister_script( ‘jquery’ );
+	wp_register_script( ‘jquery’, (“/wp-includes/js/jquery/jquery.js” ));
+	wp_enqueue_script( ‘jquery’ );
+	}
+
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
+
 
 // WP admin configuration
 add_filter( 'show_admin_bar', '__return_false' );
@@ -33,7 +40,9 @@ add_theme_support( 'menus' );
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'nav-top-bar'	=> __( 'Navigation top bar' )
+			'nav-top-bar'	=> __( 'Navigation top bar' ),
+			'nav-bottom-bar'	=> __( 'Navigation bottom bar' ),
+			'front-page-subnav'	=>	__( 'Front Page Sub Menu' )
 		)
 	);
 }
@@ -58,6 +67,25 @@ class My_Sub_Menu extends Walker_Nav_Menu {
 }
 
 
+// custom menu example @ http://digwp.com/2011/11/html-formatting-custom-menus/
+function front_page_submenu() {
+    $menu_name = 'front-page-subnav';
+    if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+        $menu = wp_get_nav_menu_object($locations[$menu_name]);
+        $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+        $menu_list = '<dl class="sub-nav">'."\n".'<dt>aktuelle prozesse:</dt>'."\n";
+        foreach ((array) $menu_items as $key => $menu_item) {
+            $title = $menu_item->title;
+            $url = $menu_item->url;
+            $menu_list .= "\t\t\t\t\t". '<dd><a href="'. $url .'">'. $title .'</a></dd>' ."\n";
+        }
+        $menu_list .= "\t\t\t". '</dl>' ."\n";
+    } else {
+    }
+    echo $menu_list;
+}
+
 
 // Function for creating Widegets
 function create_widget($name, $id, $description) {
@@ -78,7 +106,5 @@ function create_widget($name, $id, $description) {
 create_widget("Startseite Kurzbeschreibung", "front-description", "Wird auf der Startseite links unten angezeigt.");
 create_widget("Startseite Nächste Termine", "front-calendar", "Wird auf der Startseite rechts unten angezeigt.");
 create_widget("Footer Logos", "footer-logos", "Logobereich im Footer");
-
-
 
 ?>

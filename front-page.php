@@ -3,26 +3,22 @@
 
 	<div class="row">
 	   	<div class="large-12 columns">
+	   			  				
+  			<?php front_page_submenu(); ?>
 
-	   		<dl class="sub-nav">
-				<dt> Prozesse:</dt>
-	 			<dd><a href="#">Yüksel Y. klagt ÖBB</a></dd>
-	 			<dd><a href="#">Yüksel Y. klagt ÖBB</a></dd>
-	 			<dd><a href="#">Yüksel Y. klagt ÖBB</a></dd>
-			</dl>
 		</div>
     </div>	
 
     <div class="row">
    		<div class="large-12 columns panel prozess-slider">
-
-   			<div>
+ 			
    			<?php $myQuery = new WP_Query('showposts=5&cat=16');
 			while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
+			<div>
 				<?php the_content(); ?>
+			</div>	
 			<?php endwhile; wp_reset_query(); ?>	
-			</div>
-
+			
    		</div>
 
     </div>
@@ -31,7 +27,6 @@
     	<div class="large-12 columns">
 			<h2>Aktuell</h2>
     	</div>
-
 
     	<?php
 		$myQuery = new WP_Query('showposts=3&cat=1');
@@ -46,7 +41,6 @@
 		<?php endwhile; wp_reset_query(); ?>
 
     </div>
-
 
     <div class="row">
 	    <div class="large-8 columns">

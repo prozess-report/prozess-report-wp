@@ -1,8 +1,8 @@
     <div id="newsletter">
 		<div class="row">
 			<div class="medium-6 columns">
-				<h3>Lass dich von uns auf dem Laufenden halten.</h3>
-				<p>Abboniere unseren monatlichen Newsletter mit Zusammenfassungen über die aktuellen Prozesse.</p>
+				<h3>Newsletter</h3>
+				<p>Abonniere unseren monatlichen Newsletter mit Zusammenfassungen über die aktuellen Prozesse.</p>
 			</div>
 			<div class="medium-6 columns">
 				<form action="" method="post" id="subForm">
@@ -11,7 +11,7 @@
 							<input id="fieldEmail" name="cm-xlitlu-xlitlu" type="text" placeholder="du@beispiel.at">
 						</div>
 						<div class="small-4 medium-4 columns">
-							<input type="submit" href="#" class="postfix small button expand" value="Abbonieren">
+							<input type="submit" href="#" class="postfix small button expand" value="Abonnieren">
 						</div>
 					</div>
 				</form>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="large-4 columns">
 				<h3>Spenden</h3>
-				<a href="" class="button">Spenden</a>
+				<p>Du kannst uns völlig anonym und verschlüsselt Informationen zukommen lassen, die hilfreich für die Berichterstattung von Prozessen sind. Weder wir noch andere können dich dabei zurückverfolgen.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -50,7 +50,7 @@
 
   			 <?php 
                   $args = array(
-                    'menu'        => 'footer-nav',
+                    'menu'        => 'nav-bottom-bar',
                     'menu_class'  => 'inline-list',
                     'container'   => 'false'
                   );
