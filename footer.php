@@ -43,15 +43,8 @@
       <footer>
 		<div class="row">
 			<div class="large-12 columns">
+			<p> <br></p>
 
-  			 <?php 
-                  $args = array(
-                    'menu'        => 'nav-bottom-bar',
-                    'menu_class'  => 'inline-list',
-                    'container'   => 'false'
-                  );
-                  wp_nav_menu( $args );
-            ?>
 
 			</div>
 		</div>

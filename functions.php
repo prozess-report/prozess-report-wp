@@ -44,7 +44,6 @@ function register_theme_menus() {
 	register_nav_menus(
 		array(
 			'nav-top-bar'	=> __( 'Navigation top bar' ),
-			'nav-bottom-bar'	=> __( 'Navigation bottom bar' ),
 			'front-page-subnav'	=>	__( 'Front Page Sub Menu' )
 		)
 	);
