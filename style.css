@@ -18,6 +18,14 @@ body {
 }
 
 
+/* Sub Nav */
+
+.sub-nav {
+	margin-bottom: 0.75rem;
+	padding-top: 1rem;
+}
+
+
 /* Front Page Slider */
 
 .slick-prev, .slick-next, .slick-prev::before, .slick-next::before {
