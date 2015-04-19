@@ -16,11 +16,11 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
 // Function for JS
 
 function theme_js() {
-    
+
     wp_deregister_script( 'jquery' );
     wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
  	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
-    wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.js', array( 'jquery' ), '5.5.1', true );
+    wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '5.5.1', true );
     wp_register_script( 'slick_js', get_template_directory_uri() . '/js/slick.js', array( 'jquery' ), '1.4.1', true );
     wp_register_script( 'init_js', get_template_directory_uri() . '/js/init.js', array( 'jquery' ), '', false );
 
@@ -95,7 +95,7 @@ function front_page_submenu() {
 function create_widget($name, $id, $description) {
 
 	register_sidebar(array(
-		'name' => __( $name ),	 
+		'name' => __( $name ),
 		'id' => $id,
 		'description' => __( $description ),
 		'before_widget' => '<div class="">',
