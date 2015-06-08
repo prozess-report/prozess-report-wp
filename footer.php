@@ -11,7 +11,7 @@
 							<input id="fieldEmail" name="cm-xlitlu-xlitlu" type="text" placeholder="du@beispiel.at">
 						</div>
 						<div class="small-4 medium-4 columns">
-							<input type="submit" href="#" class="postfix small button expand" value="Abonnieren">
+							<input type="submit" href="#" class="postfix medium button expand" value="Abonnieren">
 						</div>
 					</div>
 				</form>
@@ -43,9 +43,24 @@
       <footer>
 		<div class="row">
 			<div class="large-12 columns">
-			<p> <br></p>
+			
+			<nav role="navigation">
+				<section>
 
+              <?php 
+                    $args = array(
+                      'theme_location'        => 'footer-nav',
+                      'menu_class'  => 'right',
+                      'container'   => 'false',
+                      'walker' => new My_Sub_Menu()
+                    );
+                    wp_nav_menu( $args );
+              ?>
 
+          </section>
+        </nav>
+	
+				
 			</div>
 		</div>
       </footer>

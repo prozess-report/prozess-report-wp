@@ -13,17 +13,75 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
+/* Schriften */
+
+
+
+
 body {
-	padding-top: 50px;
+	padding-top: 5.6250em;
 }
 
 
+/* Main Nav */
+
+
+#menu-kategorien li:first-child {
+	box-sizing:border-box;
+	border-bottom: #C66C66 0.3em solid;
+}
+
+#menu-kategorien li:nth-child(2) {
+	box-sizing:border-box;
+	border-bottom: #C0CC55 0.3em solid;
+}
+
+#menu-kategorien li:nth-child(3) {
+	box-sizing:border-box;
+	border-bottom: #4A7EB2 0.3em solid;
+}
+
 /* Sub Nav */
+
+.sub-nav-panel {
+	background: #eee;
+	padding: 1em 1em 1em 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 
 .sub-nav {
 	margin-bottom: 0.75rem;
 	padding-top: 1rem;
+	font-size: 0.8em;
+	font-weight: bold;
+	
 }
+
+dl.sub-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.sub-nav dd, .sub-nav dt {
+	float: left;
+	margin: 0;
+}
+
+.sub-nav dd a {
+	color: #000;
+	margin: 0 1em 0 1em;	
+}
+
+
+.main-news-panel {
+	background: #C0CC55;
+	
+}
+
+
 
 
 /* Event Widget */
@@ -63,15 +121,17 @@ ol.hfeed li p {
 	background: rgba(0,0,0,0.6);
 	padding-top: 2em;
 	padding-bottom: 1em;
+	color: #ccc;
 }
 
-footer {
+#footer-top h3 {
+	color: #ccc;
+}
+
+
+#footer {
 	background: #333;
 }
-
-
-/* Schriften */
-
 
 
 

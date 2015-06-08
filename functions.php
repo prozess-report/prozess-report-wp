@@ -17,15 +17,13 @@ function theme_js() {
 
     wp_deregister_script( 'jquery' );
     wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
- 	  wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
+ 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
     wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '5.5.1', true );
-    wp_register_script( 'init_js', get_template_directory_uri() . '/js/init.js', array( 'jquery' ), '', false );
 
     wp_enqueue_script( 'modernizr' );
     wp_enqueue_script( 'fastclick' );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'foundation' );
-  	wp_enqueue_script( 'init_js' );
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
@@ -42,7 +40,9 @@ function register_theme_menus() {
 	register_nav_menus(
 		array(
 			'nav-top-bar'	=> __( 'Navigation top bar' ),
-			'front-page-subnav'	=>	__( 'Front Page Sub Menu' )
+			'nav-bottom-bar'	=> __( 'Navigation bottom bar' ),
+			'front-page-subnav'	=>	__( 'Front Page Sub Menu' ),
+			'footer-nav'	=>	__( 'Footer Navigation' )
 		)
 	);
 }
@@ -74,7 +74,7 @@ function front_page_submenu() {
         $menu = wp_get_nav_menu_object($locations[$menu_name]);
         $menu_items = wp_get_nav_menu_items($menu->term_id);
 
-        $menu_list = '<dl class="sub-nav">'."\n".'<dt>aktuelle prozesse:</dt>'."\n";
+        $menu_list = '<dl class="sub-nav">'."\n".'<dt>AKTUELLE PROZESSE:</dt>'."\n";
         foreach ((array) $menu_items as $key => $menu_item) {
             $title = $menu_item->title;
             $url = $menu_item->url;
