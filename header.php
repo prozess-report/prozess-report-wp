@@ -16,7 +16,7 @@
 
   <body <?php body_class(); ?>>
 
-      <div class="contain-to-grid fixed">    
+    <div class="contain-to-grid fixed">    
 
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
@@ -32,7 +32,7 @@
 
               <?php 
                     $args = array(
-                      'menu'        => 'nav-top-bar',
+                      'theme_location'        => 'nav-top-bar',
                       'menu_class'  => 'right',
                       'container'   => 'false',
                       'walker' => new My_Sub_Menu()
@@ -42,5 +42,24 @@
 
           </section>
         </nav>
+        
+        <nav class="top-bar" data-topbar role="navigation">
 
-			</div>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+
+              <?php 
+                    $args = array(
+                      'theme_location'        => 'nav-bottom-bar',
+                      'menu_class'  => 'right',
+                      'container'   => 'false',
+                      'walker' => new My_Sub_Menu()
+                    );
+                    wp_nav_menu( $args );
+              ?>
+
+          </section>
+        </nav>
+        
+
+	</div>
