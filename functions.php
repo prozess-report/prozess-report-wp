@@ -17,7 +17,7 @@ function theme_js() {
 
     wp_deregister_script( 'jquery' );
     wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
- 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
+  	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
     wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '5.5.1', true );
 
     wp_enqueue_script( 'modernizr' );
@@ -108,5 +108,7 @@ create_widget("Footer Links", "footer-left", "Linker Bereich im Footer");
 create_widget("Footer Mitte", "footer-center", "Mittlerer Bereich im Footer");
 create_widget("Footer Rechts", "footer-right", "Rechter Bereich im Footer");
 create_widget("Footer Logos", "footer-logos", "Logobereich im Footer");
+create_widget("Seitenleiste", "sidebar", "Rechte Leiste auf normalen Seiten");
+
 
 ?>
