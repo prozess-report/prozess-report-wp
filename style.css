@@ -95,6 +95,14 @@ dl.sub-nav {
 	font-size: 0.9em;
 }
 
+.news-panel h3 {
+	font-size: 1.35em;
+}
+
+.news-panel span {
+	font-size: 0.9em;
+}
+
 /* Event Widget */
 
 ol.hfeed {

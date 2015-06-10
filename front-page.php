@@ -37,9 +37,9 @@
 
     <div class="row">
 
-    		<?php	$myQuery = new WP_Query('showposts=2&cat=1');
+    		<?php	$myQuery = new WP_Query('showposts=2&cat=1&offset=1');
 						while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
-						<article class="large-4 columns">
+						<article class="large-4 columns news-panel">
 
 							<h3><?php the_title(); ?></h3>
 							<span><?php echo the_time('j. F Y'); ?></span>
