@@ -43,14 +43,14 @@
       <footer>
 		<div class="row">
 			<div class="large-12 columns">
-			
+
 			<nav role="navigation">
 				<section>
 
-              <?php 
+              <?php
                     $args = array(
                       'theme_location'        => 'footer-nav',
-                      'menu_class'  => 'right',
+                      'menu_class'  => 'no-bullet',
                       'container'   => 'false',
                       'walker' => new My_Sub_Menu()
                     );
@@ -59,8 +59,8 @@
 
           </section>
         </nav>
-	
-				
+
+
 			</div>
 		</div>
       </footer>
