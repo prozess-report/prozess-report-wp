@@ -20,7 +20,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 body {
-	padding-top: 5.6250em;
+	padding-top: 6.5em;
 }
 
 
@@ -56,7 +56,7 @@ body {
 	padding-top: 1rem;
 	font-size: 0.8em;
 	font-weight: bold;
-	
+
 }
 
 dl.sub-nav {
@@ -72,15 +72,14 @@ dl.sub-nav {
 
 .sub-nav dd a {
 	color: #000;
-	margin: 0 1em 0 1em;	
+	margin: 0 1em 0 1em;
 }
 
 
 .main-news-panel {
 	background: #C0CC55;
-	
-}
 
+}
 
 
 
@@ -106,6 +105,19 @@ ol.hfeed li p {
 .tribe-events-widget-link {
 	margin-top: 1.5em;
 }
+
+
+/* Description Widget */
+
+.front-widget p {
+	font-size: 0.9em;
+}
+
+.front-widget h3 {
+	font-size: 1.2em;
+}
+
+
 
 
 /* Footer */
