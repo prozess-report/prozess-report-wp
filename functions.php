@@ -19,11 +19,13 @@ function theme_js() {
     wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
   	wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', false );
     wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '5.5.1', true );
+		wp_register_script( 'foundation_topbar', get_template_directory_uri() . '/js/foundation/foundation.topbar.js', array( 'jquery' ), '5.5.1', true );
 
     wp_enqueue_script( 'modernizr' );
     wp_enqueue_script( 'fastclick' );
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'foundation' );
+		wp_enqueue_script( 'foundation_topbar' );
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );

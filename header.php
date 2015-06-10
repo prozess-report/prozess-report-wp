@@ -16,7 +16,7 @@
 
   <body <?php body_class(); ?>>
 
-    <div class="contain-to-grid fixed">    
+    <div class="contain-to-grid fixed">
 
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
@@ -30,7 +30,7 @@
           <section class="top-bar-section">
             <!-- Right Nav Section -->
 
-              <?php 
+              <?php
                     $args = array(
                       'theme_location'        => 'nav-top-bar',
                       'menu_class'  => 'right',
@@ -42,13 +42,13 @@
 
           </section>
         </nav>
-        
+
         <nav class="top-bar" data-topbar role="navigation">
 
           <section class="top-bar-section">
             <!-- Right Nav Section -->
 
-              <?php 
+              <?php
                     $args = array(
                       'theme_location'        => 'nav-bottom-bar',
                       'menu_class'  => 'right',
@@ -60,6 +60,6 @@
 
           </section>
         </nav>
-        
+
 
 	</div>
