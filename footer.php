@@ -46,11 +46,10 @@
 
 			<nav role="navigation">
 				<section>
-
               <?php
                     $args = array(
                       'theme_location'        => 'footer-nav',
-                      'menu_class'  => 'no-bullet',
+                      'menu_class'  => 'inline-list',
                       'container'   => 'false',
                       'walker' => new My_Sub_Menu()
                     );

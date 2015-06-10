@@ -1,23 +1,23 @@
 <?php get_header(); ?>
 
 
-	<div class="row">
+		<div class="row">
 	   	<div class="large-12 columns sub-nav-panel">
 
   			<?php front_page_submenu(); ?>
 
-		</div>
+			</div>
     </div>
 
     <div class="row">
    		<div class="large-8 columns main-news-panel">
 
-			<h2>Aktuell</h2>
+			<h2>AKTUELL</h2>
 
    			<?php $myQuery = new WP_Query('showposts=1&cat=1');
 			while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
 				<h3><?php the_title(); ?></h3>
-				<p><?php echo the_time('j. F Y'); ?></p>
+				<span><?php echo the_time('j. F Y'); ?></span>
 				<?php the_content(); ?>
 
 
@@ -33,22 +33,21 @@
 			<?php endif; ?>
 
    		</div>
-
     </div>
 
     <div class="row">
 
-    	<?php	$myQuery = new WP_Query('showposts=2&cat=1');
+    		<?php	$myQuery = new WP_Query('showposts=2&cat=1');
 						while ($myQuery->have_posts()) : $myQuery->the_post(); ?>
 						<article class="large-4 columns">
 
-						<h3><?php the_title(); ?></h3>
-						<p><?php echo the_time('j. F Y'); ?></p>
-						<?php the_content(); ?>
+							<h3><?php the_title(); ?></h3>
+							<span><?php echo the_time('j. F Y'); ?></span>
+							<?php the_content(); ?>
 
 						</article>
 
-		<?php endwhile; wp_reset_query(); ?>
+					<?php endwhile; wp_reset_query(); ?>
 
 
 	    <div class="medium-4 columns front-widget">
@@ -59,7 +58,6 @@
 			<?php endif; ?>
 
 	    </div>
-
     </div>
 
 
