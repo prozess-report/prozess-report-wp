@@ -16,7 +16,11 @@
 
   <body <?php body_class(); ?>>
 
+<<<<<<< HEAD
     <div class="contain-to-grid fixed">
+=======
+    <div class="contain-to-grid fixed">    
+>>>>>>> origin/master
 
         <nav class="top-bar" data-topbar role="navigation">
           <ul class="title-area">
@@ -42,7 +46,27 @@
 
           </section>
         </nav>
+        
+        <nav class="top-bar" data-topbar role="navigation">
 
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+
+              <?php 
+                    $args = array(
+                      'theme_location'        => 'nav-bottom-bar',
+                      'menu_class'  => 'right',
+                      'container'   => 'false',
+                      'walker' => new My_Sub_Menu()
+                    );
+                    wp_nav_menu( $args );
+              ?>
+
+          </section>
+        </nav>
+        
+
+<<<<<<< HEAD
         <nav class="top-bar" data-topbar role="navigation">
 
           <section class="top-bar-section">
@@ -62,4 +86,6 @@
         </nav>
 
 
+=======
+>>>>>>> origin/master
 	</div>
