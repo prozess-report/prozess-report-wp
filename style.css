@@ -35,9 +35,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
 	padding-top: 6.5em;
-<<<<<<< HEAD
 }
-
 
 /* Main Nav */
 
@@ -50,8 +48,6 @@ body {
 #menu-kategorien li:nth-child(2) {
 	box-sizing:border-box;
 	border-bottom: #C0CC55 0.3em solid;
-=======
->>>>>>> origin/master
 }
 
 #menu-kategorien li:nth-child(3) {
@@ -88,7 +84,6 @@ body {
 
 .sub-nav {
 	margin-bottom: 0.75rem;
-<<<<<<< HEAD
 	padding-top: 1rem;
 	font-size: 0.8em;
 	font-weight: bold;
@@ -114,62 +109,9 @@ dl.sub-nav {
 
 .main-news-panel {
 	background: #C0CC55;
-	margin-bottom: 1em;
-	padding-top: 0.5em;
-}
-
-.main-news-panel h2 {
-	color: #999;
-	font-size: 1em;
-}
-
-.main-news-panel h3 {
-	font-weight: 900;
-}
-
-.main-news-panel span {
-	font-size: 0.9em;
-}
-
-.news-panel h3 {
-	font-size: 1.35em;
-}
-
-.news-panel span {
-	font-size: 0.9em;
-}
-=======
-	padding-top: 1em;
-	font-size: 0.8em;
-	font-weight: bold;
 
 }
 
-dl.sub-nav {
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-.sub-nav dd, .sub-nav dt {
-	float: left;
-	margin: 0;
-}
-
-.sub-nav dd a {
-	color: #000;
-	margin: 0 1em 0 1em;
-}
-
-
-.main-news-panel {
-	background: #C0CC55;
-
-}
-
-
-
->>>>>>> origin/master
 
 /* Event Widget */
 
@@ -222,13 +164,6 @@ ol.hfeed li p {
 	padding-top: 2em;
 	padding-bottom: 1em;
 	color: #ccc;
-<<<<<<< HEAD
-=======
-}
-
-#footer-top h3 {
-	color: #ccc;
->>>>>>> origin/master
 }
 
 #footer-top h3 {
@@ -239,7 +174,7 @@ footer ul {
 		list-style: none;
 }
 
-<<<<<<< HEAD
+
 footer {
 	background: #333;
 }
@@ -251,11 +186,10 @@ footer {
 
 #menu-fussleiste li:first-child {
 	margin-left: 0;
-=======
+
 footer a {
 	font-size: 0.8em;
 	color: #fff;
->>>>>>> origin/master
 }
 
 
