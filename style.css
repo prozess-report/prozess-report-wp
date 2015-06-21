@@ -16,6 +16,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Schriften */
 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/58Izk0DtN5Jbz2A0aXUD5gLUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/pQ091WwCqK_i0BhMWeZ4BPesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+
 
 
 
@@ -128,7 +142,7 @@ dl.sub-nav {
 	padding-top: 1em;
 	font-size: 0.8em;
 	font-weight: bold;
-	
+
 }
 
 dl.sub-nav {
@@ -144,13 +158,13 @@ dl.sub-nav {
 
 .sub-nav dd a {
 	color: #000;
-	margin: 0 1em 0 1em;	
+	margin: 0 1em 0 1em;
 }
 
 
 .main-news-panel {
 	background: #C0CC55;
-	
+
 }
 
 
