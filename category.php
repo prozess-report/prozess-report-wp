@@ -4,18 +4,18 @@
 
 	    	<div class="large-8 columns">
 
-          <h1><?php wp_title(); ?></h1>
+          <h2><?php wp_title(''); ?></h2>
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<article class="post">
 
-			    	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			    	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 						<?php the_excerpt(); ?>
 
 			    	<p class="meta">
 			    		Von <?php the_author_posts_link(); ?>
-			    		am <?php echo the_time('l, F jS, Y'); ?>
+			    		am <?php echo the_time('j. F Y'); ?>
 			    		<a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
 					</p>
 
