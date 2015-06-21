@@ -43,7 +43,6 @@
       <footer>
 		<div class="row">
 			<div class="large-12 columns">
-<<<<<<< HEAD
 
 			<nav role="navigation">
 				<section>
@@ -51,27 +50,15 @@
                     $args = array(
                       'theme_location'        => 'footer-nav',
                       'menu_class'  => 'inline-list',
-=======
-			
-              <?php 
-                    $args = array(
-                      'theme_location'        => 'footer-nav',
-                      'menu_class'  => 'text-center',
->>>>>>> origin/master
                       'container'   => 'false',
                       'walker' => new My_Sub_Menu()
                     );
                     wp_nav_menu( $args );
               ?>
-<<<<<<< HEAD
 
           </section>
         </nav>
 
-
-=======
-				
->>>>>>> origin/master
 			</div>
 		</div>
       </footer>
